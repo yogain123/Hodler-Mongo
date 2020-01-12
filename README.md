@@ -149,6 +149,27 @@ amount.<br/>
 
 https://documenter.getpostman.com/view/2416522/SWEB2G2w?version=latest
 
+## Mongoose Model
+
+
+Constructor | save() | find()
+-- | -- | --
+update() | remove() | count()
+findOne() | findOneAndRemove() | findOneAndUpdate()
+findById() | findByIdAndRemove() | findByIdAndUpdate()
+where
+
+
+
+**Find the users having chips <10000 of Country 'USA'**
+`userModel.where('chips').lt(10000).where('country').eq('USA');
+`
+
+
+Mongoose Query Builder
+https://www.jaygould.co.uk/dev/2018/03/28/concice-collection-mongodb-mongoose-database.html
+
+
 ## Author
 
 Yogendra Saxena
