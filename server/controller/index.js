@@ -180,7 +180,7 @@ exports.authorization = async (req, res, next) => {
 exports.sendEmail = async (email, data) => {
   return new Promise(async (resolve, reject) => {
     try {
-      email = "yogendrasaxena56@gmail.com"; // just for checking purpose, comment it later
+     // email = "yogendrasaxena56@gmail.com"; // just for checking purpose, comment it later
       const html = pug.renderFile(`${__dirname}/../public/email.pug`, { data });
       var subject = "Winner Details";
       var request = sg.emptyRequest({

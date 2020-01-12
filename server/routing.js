@@ -328,7 +328,7 @@ async function autoTaskExecutor() {
         for (let eachUser of bidDetails) {
           //send email to eachUser.user with winner : item details
           if (!itemDetailFromAuction.auctioned)
-            await sendEmail(eachUser.user, item._doc);
+            await sendEmail(eachUser.user, item);
         }
         await updateAuctionItemWhichIsSold(
           itemDetailFromAuction.itemId,
